@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4a8bcfb866.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>CoinIntention App</title>
+  </head>
+  <body>
+    <div>
+      <!-- Nav Bar -->
+      <div class="navbar">
+        <div class="logo">
+          <img src="./assets/logo.png" alt="logo" style="color: #fff" />
+        </div>
+        <div class="menu">
+          <div class="menu-item">
+            <a>Cryptocurrencies</a>
+            <a style="margin-left: 30px">Exchanges</a>
+            <a style="margin-left: 30px">Community</a>
+            <a style="margin-left: 30px">Trades</a>
+          </div>
+          <i
+            class="fa-sharp fa-solid fa-magnifying-glass"
+            style="color: #ffffff; margin-left: 100px"
+          ></i>
+        </div>
+      </div>
+
+      <!-- Header Text -->
+      <div class="header-section">
+        <h4>Today's Cryptocurrency Prices By Market Cap</h4>
+        <p>
+          The global cryptocurrency market cap today is
+          <span class="rise">$811.7B</span>, a
+          <span class="low">&#8595; 0.17%</span> decrease in the last 24 hours.
+        </p>
+      </div>
+
+      <!-- Table -->
+      <table class="dashboard">
+        <col style="width: 15%" />
+        <col style="width: 1%" />
+        <col style="width: 5%" />
+        <col style="width: 5%" />
+        <col style="width: 1%" />
+        <thead
+          style="
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+          "
+        >
+          <tr>
+            <th style="text-align: left">Name</th>
+            <th>Price</th>
+            <th>24h Change</th>
+            <th>Chart</th>
+            <th>Marketcap</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              style="
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              "
+            >
+              <img src="./assets/logo_b.png" style="margin-right: 10%" />
+              <span style="font-weight: 700">Bitcoin</span>
+              <span
+                style="
+                  color: #858585;
+                  font-weight: 400;
+                  font-size: 16px;
+                  margin-left: 10%;
+                "
+                >BTC</span
+              >
+            </td>
+            <td style="font-weight: 600">$3625.24</td>
+            <td style="text-align: center; font-weight: 600; color: #14ff00">
+              +2.4%
+            </td>
+            <td style="text-align: center">
+              <img src="./assets/lg.png" />
+            </td>
+            <td style="font-weight: 600">$320,893,271,955</td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              "
+            >
+              <img src="./assets/logo_e.png" style="margin-right: 10%" />
+              <span style="font-weight: 700">Ethereum</span>
+              <span
+                style="
+                  color: #858585;
+                  font-weight: 400;
+                  font-size: 16px;
+                  margin-left: 10%;
+                "
+                >ETH</span
+              >
+            </td>
+            <td style="font-weight: 600">$1218.18</td>
+            <td style="text-align: center; font-weight: 600; color: red">
+              -0.7%
+            </td>
+            <td style="text-align: center">
+              <img src="./assets/lr.png" />
+            </td>
+            <td style="font-weight: 600">$148,563,792,762</td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              "
+            >
+              <img src="./assets/Logo_s.png" style="margin-right: 10%" />
+              <span style="font-weight: 700">Shibulnu</span>
+              <span
+                style="
+                  color: #858585;
+                  font-weight: 400;
+                  font-size: 16px;
+                  margin-left: 10%;
+                "
+                >Shibu</span
+              >
+            </td>
+            <td style="font-weight: 600">$0.0001</td>
+            <td style="text-align: center; font-weight: 600; color: #14ff00">
+              +1.2%
+            </td>
+            <td style="text-align: center">
+              <img src="./assets/lg.png" />
+            </td>
+            <td style="font-weight: 600">$4,498,804,882</td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              "
+            >
+              <img src="./assets/logo_b.png" style="margin-right: 10%" />
+              <span style="font-weight: 700">Bitcoin</span>
+              <span
+                style="
+                  color: #858585;
+                  font-weight: 400;
+                  font-size: 16px;
+                  margin-left: 10%;
+                "
+                >BTC</span
+              >
+            </td>
+            <td style="font-weight: 600">$3625.24</td>
+            <td style="text-align: center; font-weight: 600; color: #14ff00">
+              +2.4%
+            </td>
+            <td style="text-align: center">
+              <img src="./assets/lg.png" />
+            </td>
+            <td style="font-weight: 600">$320,893,271,955</td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              "
+            >
+              <img src="./assets/logo_e.png" style="margin-right: 10%" />
+              <span style="font-weight: 700">Ethereum</span>
+              <span
+                style="
+                  color: #858585;
+                  font-weight: 400;
+                  font-size: 16px;
+                  margin-left: 10%;
+                "
+                >ETH</span
+              >
+            </td>
+            <td style="font-weight: 600">$1218.18</td>
+            <td style="text-align: center; font-weight: 600; color: red">
+              -0.7%
+            </td>
+            <td style="text-align: center">
+              <img src="./assets/lr.png" />
+            </td>
+            <td style="font-weight: 600">$148,563,792,762</td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              "
+            >
+              <img src="./assets/Logo_s.png" style="margin-right: 10%" />
+              <span style="font-weight: 700">Shibulnu</span>
+              <span
+                style="
+                  color: #858585;
+                  font-weight: 400;
+                  font-size: 16px;
+                  margin-left: 10%;
+                "
+                >Shibu</span
+              >
+            </td>
+            <td style="font-weight: 600">$0.0001</td>
+            <td style="text-align: center; font-weight: 600; color: #14ff00">
+              +1.2%
+            </td>
+            <td style="text-align: center">
+              <img src="./assets/lg.png" />
+            </td>
+            <td style="font-weight: 600">$4,498,804,882</td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              "
+            >
+              <img src="./assets/logo_b.png" style="margin-right: 10%" />
+              <span style="font-weight: 700">Bitcoin</span>
+              <span
+                style="
+                  color: #858585;
+                  font-weight: 400;
+                  font-size: 16px;
+                  margin-left: 10%;
+                "
+                >BTC</span
+              >
+            </td>
+            <td style="font-weight: 600">$3625.24</td>
+            <td style="text-align: center; font-weight: 600; color: #14ff00">
+              +2.4%
+            </td>
+            <td style="text-align: center">
+              <img src="./assets/lg.png" />
+            </td>
+            <td style="font-weight: 600">$320,893,271,955</td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              "
+            >
+              <img src="./assets/logo_e.png" style="margin-right: 10%" />
+              <span style="font-weight: 700">Ethereum</span>
+              <span
+                style="
+                  color: #858585;
+                  font-weight: 400;
+                  font-size: 16px;
+                  margin-left: 10%;
+                "
+                >ETH</span
+              >
+            </td>
+            <td style="font-weight: 600">$1218.18</td>
+            <td style="text-align: center; font-weight: 600; color: red">
+              -0.7%
+            </td>
+            <td style="text-align: center">
+              <img src="./assets/lr.png" />
+            </td>
+            <td style="font-weight: 600">$148,563,792,762</td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              "
+            >
+              <img src="./assets/Logo_s.png" style="margin-right: 10%" />
+              <span style="font-weight: 700">Shibulnu</span>
+              <span
+                style="
+                  color: #858585;
+                  font-weight: 400;
+                  font-size: 16px;
+                  margin-left: 10%;
+                "
+                >Shibu</span
+              >
+            </td>
+            <td style="font-weight: 600">$0.0001</td>
+            <td style="text-align: center; font-weight: 600; color: #14ff00">
+              +1.2%
+            </td>
+            <td style="text-align: center">
+              <img src="./assets/lg.png" />
+            </td>
+            <td style="font-weight: 600">$4,498,804,882</td>
+          </tr>
+          <tr>
+            <td
+              style="
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+              "
+            >
+              <img src="./assets/logo_b.png" style="margin-right: 10%" />
+              <span style="font-weight: 700">Bitcoin</span>
+              <span
+                style="
+                  color: #858585;
+                  font-weight: 400;
+                  font-size: 16px;
+                  margin-left: 10%;
+                "
+                >BTC</span
+              >
+            </td>
+            <td style="font-weight: 600">$3625.24</td>
+            <td style="text-align: center; font-weight: 600; color: #14ff00">
+              +2.4%
+            </td>
+            <td style="text-align: center">
+              <img src="./assets/lg.png" />
+            </td>
+            <td style="font-weight: 600">$320,893,271,955</td>
+          </tr>
+        </tbody>
+      </table>
+      <button
+        style="
+          background: linear-gradient(90deg, #3dd8ee 0%, #0997e8 100%);
+          border-radius: 8px;
+          font-weight: 700;
+          width: 200px;
+          height: 60px;
+          color: #fff;
+          font-size: 24px;
+          margin-left: 620px;
+          margin-bottom: 80px;
+        "
+      >
+        View All
+      </button>
+    </div>
+
+    <!-- II Section -->
+    <div style="display: flex; flex-direction: row; background-color: #00092a">
+      <div
+        style="
+          width: 50%;
+          margin: 5%;
+          background-image: url(./assets/world.png);
+          position: relative;
+        "
+      >
+        <img
+          src="./assets/Ellipse 1.png"
+          alt="Ellipse"
+          style="
+            width: 292px;
+            height: 287px;
+            margin: auto;
+            position: absolute;
+            left: 26.32%;
+            right: 53.46%;
+            top: 43.27%;
+            bottom: 47.42%;
+          "
+        />
+        <img
+          src="./assets/Ellipse 2.png"
+          style="
+            margin: auto;
+            position: absolute;
+            left: 24%;
+            right: 58.53%;
+            top: 49%;
+            bottom: 46.22%;
+          "
+        />
+        <div
+          style="
+            width: 160px;
+            height: 68px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #0a1b2b;
+            position: absolute;
+            margin-left: 25%;
+            margin-top: 10%;
+          "
+        >
+          <img
+            src="./assets/compass.png"
+            style="width: 25px; height: 25px; margin-left: 5%"
+          />
+          <p style="margin-left: 10%">198+<br />Countries</p>
+        </div>
+        <div
+          style="
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            margin-top: 22%;
+            margin-left: 24%;
+          "
+        >
+          <img src="./assets/Logo_s.png" />
+        </div>
+        <div style="position: absolute; margin-left: 50%; margin-top: 22%">
+          <img
+            src="./assets/logo_e.png"
+            style="margin-left: 30%; margin-bottom: 10%"
+          />
+          <div
+            style="
+              width: 163px;
+              height: 68px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              background-color: #0a1b2b;
+            "
+          >
+            <img
+              src="./assets/contact.png"
+              style="width: 25px; height: 25px; margin-left: 5%"
+            />
+            <p style="margin-left: 5%">20 Million+<br />Trades</p>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: row;
+            margin-left: 15%;
+            margin-top: 45%;
+          "
+        >
+          <div
+            style="
+              width: 187px;
+              height: 68px;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              background-color: #0a1b2b;
+              z-index: 1;
+            "
+          >
+            <img
+              src="./assets/sync.png"
+              style="width: 25px; height: 25px; margin-left: 5%"
+            />
+            <p style="margin-left: 5%">350+<br />Trading Pairs</p>
+          </div>
+          <img
+            src="./assets/logo_b.png"
+            style="
+              width: 40px;
+              height: 40px;
+              margin-left: 5%;
+              margin-top: 3%;
+              z-index: 1;
+            "
+          />
+        </div>
+      </div>
+      <div style="padding: 2%">
+        <h3 style="font-size: 36px; font-weight: 500; color: #fff">
+          We are the most trusted<br />
+          Cryptocurrency Platform
+        </h3>
+        <span style="font-size: 16px; font-weight: 400; color: #fff">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+          Nunc vulputate libero et velit interdum, ac aliquet odio<br />
+          mattis.
+        </span>
+        <div>
+          <!-- 1st Item -->
+          <div style="display: flex; flex-direction: row">
+            <div
+              style="
+                background-color: #0f1535;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                margin-top: 35px;
+              "
+            >
+              <img src="./assets/eye.png" style="margin-left: 25px" />
+            </div>
+            <div style="margin-left: 4%">
+              <h3
+                style="
+                  font: size 18px;
+                  font-weight: 500;
+                  padding: 0px;
+                  margin: 0px;
+                  margin-top: 35px;
+                  color: #fff;
+                  width: 60px;
+                  height: 27px;
+                "
+              >
+                Clarity
+              </h3>
+              <span
+                style="
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: 400;
+                  width: 392px;
+                  height: 48px;
+                  margin-top: 3px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit.Nunc vulputate
+              </span>
+            </div>
+          </div>
+
+          <!-- 2nd Item -->
+          <div style="display: flex; flex-direction: row">
+            <div
+              style="
+                background-color: #0f1535;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+              "
+            >
+              <img src="./assets/people.png" style="margin-left: 25px" />
+            </div>
+            <div style="margin-left: 4%">
+              <h3
+                style="
+                  font: size 18px;
+                  font-weight: 500;
+                  padding: 0px;
+                  margin: 0px;
+                  margin-top: 35px;
+                  color: #fff;
+                  width: 60px;
+                  height: 27px;
+                "
+              >
+                Confidence
+              </h3>
+              <span
+                style="
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: 400;
+                  width: 392px;
+                  height: 48px;
+                  margin-top: 3px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit.Nunc vulputate
+              </span>
+            </div>
+          </div>
+
+          <!-- 3rd Item -->
+          <div style="display: flex; flex-direction: row">
+            <div
+              style="
+                background-color: #0f1535;
+                width: 80px;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+              "
+            >
+              <img src="./assets/secure.png" style="margin-left: 25px" />
+            </div>
+            <div style="margin-left: 4%">
+              <h3
+                style="
+                  font: size 18px;
+                  font-weight: 500;
+                  padding: 0px;
+                  margin: 0px;
+                  margin-top: 35px;
+                  color: #fff;
+                  width: 60px;
+                  height: 27px;
+                "
+              >
+                Community
+              </h3>
+              <span
+                style="
+                  color: #fff;
+                  font-size: 16px;
+                  font-weight: 400;
+                  width: 392px;
+                  height: 48px;
+                  margin-top: 3px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consectetur<br />
+                adipiscing elit.Nunc vulputate
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- III Section -->.
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+      "
+    >
+      <!--
+         Left Section -->
+      <div style="background-color: #041334">
+        <h2 style="font: size 36px; font-weight: 600; color: #fff">
+          Reason to invest in<br />
+          Cryptocurrency in 2022
+        </h2>
+        <div>
+          <div
+            style="
+              margin-top: 2%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <img src="./assets/tickmark.png" style="margin-left: 5%" />
+            <span
+              style="
+                font-size: 20px;
+                font-weight: 500;
+                margin-left: 1%;
+                color: #fff;
+              "
+              >Buying Bitcoin in legal</span
+            >
+          </div>
+          <div style="margin-left: 8%">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              Nunc vulputate libero et velit interdum, ac aliquet odio
+              mattis.<br />
+              Class aptent taciti sociosqu ad.
+            </p>
+          </div>
+          <div
+            style="
+              margin-top: 2%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <img src="./assets/tickmark.png" style="margin-left: 5%" />
+            <span
+              style="
+                font-size: 20px;
+                font-weight: 500;
+                margin-left: 1%;
+                color: #fff;
+              "
+              >High return potential</span
+            >
+          </div>
+          <div style="margin-left: 8%">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              Nunc vulputate libero et velit interdum, ac aliquet odio
+              mattis.<br />
+              Class aptent taciti sociosqu ad.
+            </p>
+          </div>
+          <div
+            style="
+              margin-top: 2%;
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <img src="./assets/tickmark.png" style="margin-left: 5%" />
+            <span
+              style="
+                font-size: 20px;
+                font-weight: 500;
+                margin-left: 1%;
+                color: #fff;
+              "
+              >Growing alternative alternative asset class</span
+            >
+          </div>
+          <div style="margin-left: 8%">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+              Nunc vulputate libero et velit interdum, ac aliquet odio
+              mattis.<br />
+              Class aptent taciti sociosqu ad.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Right Section -->
+      <div>
+        <div style="position: absolute">
+          <img src="./assets/first-beat.png" alt="line-1" width="100%" />
+          <img src="./assets/second-beat.png" alt="line-2" width="100%" />
+          <img src="./assets/third-beat.png" alt="line-3" width="100%" />
+          <img src="./assets/fourth-beat.png" alt="line-4" width="100%" />
+          <img src="./assets/fifth-beat.png" alt="line-5" width="100%" />
+        </div>
+        <div
+          style="
+            border-radius: 50px;
+            padding: 1%;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.01);
+            box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+          "
+        >
+          <span style="color: #fff">
+            Your portfolio is <span class="rise">up 2.13%</span>
+          </span>
+          <table class="coin-table">
+            <tr>
+              <td>
+                <img src="./assets/bitcoin-logo.png" alt="btc" width="95%" />
+              </td>
+              <td>Bitcoin <br />BTC</td>
+              <td><span class="rise">1.33% &#8593;</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./assets/eth-diamond.png" alt="btc" width="95%" />
+              </td>
+              <td>Ethereum <br />ETH</td>
+              <td><span class="rise">2.14% &#8593;</span></td>
+            </tr>
+
+            <tr>
+              <td><img src="./assets/litecoin.png" alt="btc" width="95%" /></td>
+              <td>Litecoin <br />LTC</td>
+              <td><span class="rise">0.81% &#8593;</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./assets/bitcoin-logo.png" alt="btc" width="95%" />
+              </td>
+              <td>Bitcoin <br />BTC</td>
+              <td><span class="rise">1.33% &#8593;</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="./assets/eth-diamond.png" alt="btc" width="95%" />
+              </td>
+              <td>Ethereum <br />ETH</td>
+              <td><span class="rise">2.14% &#8593;</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div
+      style="
+        background-color: #00092a;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+      "
+    >
+      <div style="margin-top: 5%">
+        <img src="./assets/logo.png" style="margin-left: 104.01px" />
+        <p style="margin-left: 103px">
+          CoinIntention's mission is to make investing in<br />
+          cryptocurrencies easy and efficient. CoinIntention tracks<br />
+          various data of cryptocurrencies and thus offers its users<br />
+          an overview of all cryptocurrencies available on the market<br />
+          and their performance, market capitalization, trading<br />
+          volume, etc.
+        </p>
+      </div>
+      <div
+        style="
+          width: 50%;
+          display: flex;
+          flex-direction: row;
+          list-style: none;
+          color: #fff;
+          margin-top: 5%;
+          margin-left: 2%;
+          justify-content: space-evenly;
+        "
+      >
+        <div>
+          <li style="font-size: 24px; font-weight: 400">Company</li>
+          <li style="margin-top: 6%">About us</li>
+          <li style="margin-top: 8%">Terms of use</li>
+          <li style="margin-top: 8%">Privacy Policy</li>
+          <li style="margin-top: 8%">Community Rules</li>
+          <li style="margin-top: 8%">Disclaimer</li>
+          <li style="margin-top: 8%">Methodology</li>
+        </div>
+        <div>
+          <li style="font-size: 24px; font-weight: 400">Support</li>
+          <li style="margin-top: 6%">Requested Form</li>
+          <li style="margin-top: 8%">Contact Support</li>
+          <li style="margin-top: 8%">FAQ's</li>
+          <li style="margin-top: 8%">Glossary</li>
+        </div>
+        <div>
+          <li style="font-size: 24px; font-weight: 400">Socials</li>
+          <li style="margin-top: 6%">Facebook</li>
+          <li style="margin-top: 8%">Instagram</li>
+          <li style="margin-top: 8%">Twitter</li>
+          <li style="margin-top: 8%">Youtube</li>
+          <li style="margin-top: 8%">Telegram</li>
+        </div>
+      </div>
+    </div>
+    <p style="font-size: 12px; display: flex; justify-content: center">
+      © 2021-2023 CoinIntention. All rights reserved.
+    </p>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
