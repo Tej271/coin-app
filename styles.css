@@ -1,38 +1,232 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 body {
   height: 100%;
   background-color: #041334;
   font-family: "Poppins", sans-serif;
 }
 
+.menu-search-box {
+  display: none;
+}
+
 .logo {
-  margin-left: 150px;
   align-items: center;
+  color: #fff;
+  width: 90%;
+  margin-left: 10%;
 }
 
 .navbar {
   background-color: #091838;
-  width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.menu {
+.country-card {
+  margin-left: 10%;
+  color: #fff;
+  font-size: 1vw;
+  padding-right: 25px;
+}
+
+.map-section {
+  margin-top: 5%;
+  margin-left: -5%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  float: right;
-  margin-left: 200px;
-  color: #fff;
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  background-color: #00092a;
+}
+
+.map-section-left {
+  margin: 5%;
+  background-image: url(./assets/world.png);
+  position: relative;
+  background-size: cover;
+}
+
+.hamburger {
+  margin: 10%;
+}
+
+/* Things to stay there always specify above this line. */
+@media (min-width: 240px) {
+  .section-three {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-left: -5%;
+  }
+
+  .section-three > div {
+    margin: 5%;
+  }
+
+  .country-card {
+    margin-left: 10%;
+    color: #fff;
+    font-size: 1.5vw;
+    padding-right: 25px;
+  }
+
+  .map-section {
+    flex-direction: column;
+  }
+
+  .map-section-left {
+    width: 90%;
+  }
+
+  .footer-container {
+    background-color: #00092a;
+    display: flex;
+    flex-direction: column;
+    margin-left: -5%;
+    align-items: center;
+    align-content: center;
+  }
+
+  .footer-container > div {
+    width: 100%;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: #fff;
+    margin-bottom: 5%;
+    width: 100%;
+  }
+
+  .footer-menu > div {
+    margin-left: 10%;
+    margin-top: 4%;
+  }
+
+  .footer-menu > div > li:nth-child(1) {
+    margin-top: 1%;
+  }
+}
+
+@media (min-width: 480px) {
+  .footer-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: #fff;
+    margin-bottom: 5%;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+  }
+
+  .footer-menu > div {
+    margin-left: 0%;
+    margin-top: 4%;
+  }
+}
+
+@media (min-width: 640px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 864px) {
+  .section-three {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    margin-left: -5%;
+  }
+
+  .footer-container {
+    background-color: #00092a;
+    display: flex;
+    flex-direction: row;
+    margin-left: -5%;
+  }
+
+  .footer-menu {
+    margin-top: 5%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-around;
+  }
+
+  .menu-search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 578px;
+    margin-left: 5%;
+    padding: 20px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0;
+    flex-grow: 1;
+    color: #fff;
+    font-size: 15px;
+    align-items: center;
+    width: 450px;
+  }
+
+  .menu > p {
+    list-style: none;
+    margin-left: 4%;
+  }
+
+  .search-icon {
+    padding: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .country-card {
+    margin-left: 10%;
+    color: #fff;
+    font-size: 1vw;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .map-section {
+    flex-direction: row;
+  }
+
+  .map-section-left {
+    width: 50%;
+  }
 }
 
 .header-section {
-  margin-left: 100px;
-  /* color: #fff; */
+  color: #fff;
 }
 
 h4 {
@@ -43,8 +237,13 @@ h4 {
   color: #fff;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
+/* @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  h4 {
+    display: none;
+  }
+} */
+
+.sub-heading {
   font-size: 20px;
   font-weight: 500;
   color: #fff;
@@ -59,9 +258,8 @@ p {
 }
 
 .dashboard {
-  width: 80%;
+  width: 1200px;
   margin: auto;
-  margin-left: 7%;
   color: #fff;
   border-collapse: separate;
   border-spacing: 0 2em;
@@ -72,4 +270,27 @@ p {
   border-spacing: 2em 1em;
   color: #fff;
   vertical-align: middle;
+  width: 100%;
+}
+
+.para-bitcoin,
+.para-potential,
+.para-asset-grow,
+.para-million,
+.para-trade-pairs {
+  color: #fff;
+}
+
+.para-info {
+  margin-left: 103px;
+  color: #fff;
+  text-align: justify;
+  margin: 5%;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
 }
