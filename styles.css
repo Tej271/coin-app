@@ -61,6 +61,13 @@ body {
 }
 
 /* Things to stay there always specify above this line. */
+
+@media (max-width: 480px) {
+  .map-section-left {
+    display: none;
+  }
+}
+
 @media (min-width: 240px) {
   .section-three {
     flex-direction: column;
